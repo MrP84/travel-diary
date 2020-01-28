@@ -84,7 +84,7 @@ header h1 {
 
 .card {
 	flex: 0 1 500px;
-	min-height: 500px;
+	min-height: 400px;
 	/*border: 5px solid lightblue;*/
 	margin: 20px 15px;
 	box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
@@ -179,21 +179,21 @@ footer {
 	width: 100%;
 	font-size: 18px;
 	padding: 5px;
-	border: 5px solid #69F0AE;
-	border-width: 1px 1px 5px 1px;
+	border: 1px solid #F44336;
+	border-bottom: 5px solid #F44336;
 	outline: none;
 	margin-bottom: 5px;
 	font-family: 'Roboto', sans-serif;
 }
 
-.card > button {
-	width: 100%;
-	background: #69F0AE;
+.add-trip > * {
+  border: 1px solid #F44336;
+  border-bottom: 5px solid #F44336;
 }
 
-.ajouter-place > * {
-	border: 5px solid #F44336;
-	border-width: 1px 1px 5px 1px;
+.card button {
+  width: 100%;
+  border-bottom: 0;
 }
 
 /* ----------------------------

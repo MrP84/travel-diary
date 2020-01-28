@@ -3,9 +3,9 @@ import React, { Component } from 'react'
 import './App.css'
 
 import Header from "./components/Header";
-import Admin from "./components/Admin";
+import Manage from "./components/Manage"
 import Card from "./components/Card";
-import places from "./places";
+// import places from "./places";
 import base from './base';
 
 class App extends Component {
@@ -30,10 +30,16 @@ class App extends Component {
   addTrip = place => {
     const places = { ...this.state.places };
     places[`place-${Date.now()}`] = place;
-    this.setState(places);
-  }
+    this.setState({places});
+  };
 
-  loadExample = () => this.setState({places});
+  updateTrip = (key, newPlace) => {
+    const places = { ...this.state.places };
+    places[key] = newPlace;
+    this.setState({places});
+  };
+
+  /*loadExample = () => this.setState({places});*/
 
   render () {
     const cards = Object.keys(this.state.places)
@@ -44,9 +50,13 @@ class App extends Component {
         <div className='cards'>
           { cards }
         </div>
-        <Admin
+        {/*<Manage
           addTrip={this.addTrip}
-          loadExample={this.loadExample} />
+          loadExample={this.loadExample} />*/}
+          <Manage
+            places={this.state.places}
+            addTrip={this.addTrip}
+            updateTrip={this.updateTrip}/>
       </div>
     )
   }
