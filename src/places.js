@@ -19,7 +19,7 @@ const places = {
     description: "Lagos (littéralement  \"Les lacs\") est une ville et une agglomération située à l'embouchure de la Bensafrim au sud de l'Algarve, au Portugal."
   },
   place4: {
-    nom: 'Hoseshoe Bend',
+    nom: 'Horseshoe Bend',
     image: 'horseshoe-bend.jpg',
     pays: 'USA',
     description: "Le Horseshoe Bend est le nom d'un méandre du fleuve Colorado situé à 6 km au sud de la ville de Page en Arizona et correspondant à un ancien plateau érodé."

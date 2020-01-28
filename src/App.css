@@ -104,35 +104,26 @@ header h1 {
 
 .place {
 	padding: 0 20px;
+  margin: 20px 0 0;
 }
-.place .liste-ingredients {
+.place .location {
 	display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 	flex-wrap: wrap;
 	width: 100%;
 	padding: 5px 20px;
 	background-color: #F5F5F5;
-	transform: scale(1.12);
 	box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
 }
-.place .liste-ingredients li {
-	margin-left: 20px;
-	margin-right: 5px;
+.place .location h3 {
+	color: #006666;
 }
-.place ol {
-	padding: 10px 0px 10px 20px;
-}
-.place ol li {
-	margin-bottom: 10px;
-}
-
 
 @media all and (max-width:500px) {
 
 	h1 {
 		font-size: 1.3em;
-	}
-	.card {
-		margin: 0px;
 	}
 	header {
 		margin: 0;

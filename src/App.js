@@ -16,9 +16,8 @@ class App extends Component {
 
 
   render () {
-    const cards = Object.keys(this.state.places).map(index => <Card key={index} details={this.state.places[index]} />);
-    console.log(cards);
-    console.log(this.state.places['place1']);
+    const cards = Object.keys(this.state.places)
+      .map(index => <Card key={index} details={this.state.places[index]} />);
     return (
       <div className='box'>
         <Header pseudo={this.state.pseudo} />
