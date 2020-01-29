@@ -191,6 +191,16 @@ footer {
   border-bottom: 5px solid #F44336;
 }
 
+
+.update-trip > * {
+  border: 1px solid #3399CC;
+  border-bottom: 5px solid #3399CC;
+}
+
+.update-trip + .delete-button {
+  background-color: #39C;
+}
+
 .card button {
   width: 100%;
   border-bottom: 0;
