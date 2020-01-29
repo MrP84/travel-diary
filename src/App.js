@@ -5,7 +5,7 @@ import './App.css'
 import Header from "./components/Header";
 import Manage from "./components/Manage"
 import Card from "./components/Card";
-// import places from "./places";
+import places from "./places";
 import base from './base';
 
 class App extends Component {
@@ -39,7 +39,13 @@ class App extends Component {
     this.setState({places});
   };
 
-  /*loadExample = () => this.setState({places});*/
+  deleteTrip = key => {
+    const places = { ...this.state.places };
+    places[key] = null;
+    this.setState({places});
+  }
+
+  loadExample = () => this.setState({places});
 
   render () {
     const cards = Object.keys(this.state.places)
@@ -50,13 +56,14 @@ class App extends Component {
         <div className='cards'>
           { cards }
         </div>
-        {/*<Manage
-          addTrip={this.addTrip}
-          loadExample={this.loadExample} />*/}
+
           <Manage
+            pseudo={this.state.pseudo}
             places={this.state.places}
+            loadExample={this.loadExample}
             addTrip={this.addTrip}
-            updateTrip={this.updateTrip}/>
+            updateTrip={this.updateTrip}
+            deleteTrip={this.deleteTrip} />
       </div>
     )
   }
