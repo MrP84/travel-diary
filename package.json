@@ -28,5 +28,8 @@
   ],
   "standard": {
     "parser": "babel-eslint"
+  },
+  "devDependencies": {
+    "node-sass": "^4.13.1"
   }
 }
