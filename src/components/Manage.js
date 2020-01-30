@@ -51,6 +51,14 @@ class Manage extends Component {
       .then(this.handleAuth)
   }
 
+  githubAuthenticate = () => {
+    const githubProvider = new firebase.auth.GithubAuthProvider();
+    firebaseApp
+      .auth()
+      .signInWithPopup(githubProvider)
+      .then(this.handleAuth)
+  }
+
   logout = async () => {
     await  firebase.auth().signOut();
     this.setState({ uid: null });
@@ -63,7 +71,10 @@ class Manage extends Component {
     const logout = <button onClick={this.logout}>Déconnexion</button>
 
     if (!this.state.uid) {
-      return <Login googleAuthenticate={this.googleAuthenticate} facebookAuthenticate={this.facebookAuthenticate} />
+      return <Login
+        googleAuthenticate={this.googleAuthenticate}
+        facebookAuthenticate={this.facebookAuthenticate}
+        githubAuthenticate={this.githubAuthenticate} />
     }
 
     if (this.state.uid !== this.state.tripper) {
