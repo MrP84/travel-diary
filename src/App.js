@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 // CSS
-import './App.css'
+import './App.scss'
 
 import Header from "./components/Header";
 import Manage from "./components/Manage"

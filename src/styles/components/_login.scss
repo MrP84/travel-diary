@@ -1,0 +1,12 @@
+.login {
+  padding: 5px;
+  text-align: center;
+  max-width: 500px;
+  margin: auto;
+
+  > * {
+    width: 100%;
+
+    margin: 0 auto 20px auto;
+  }
+}

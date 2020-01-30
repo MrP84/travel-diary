@@ -1,0 +1,25 @@
+.admin-form > * {
+  width: 100%;
+  font-size: 18px;
+  padding: 5px;
+  border: 1px solid $color-red;
+  border-bottom: 5px solid $color-red;
+  outline: none;
+  margin-bottom: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.add-trip > * {
+  border: 1px solid $color-red;
+  border-bottom: 5px solid $color-red;
+}
+
+
+.update-trip > * {
+  border: 1px solid $color-blue;
+  border-bottom: 5px solid $color-blue;
+}
+
+.update-trip + .delete-button {
+  background-color: $color-blue;
+}

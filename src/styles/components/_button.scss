@@ -1,0 +1,48 @@
+button {
+  font-size: 20px;
+  border: none;
+  color: $color-white;
+  background-color: $color-red;
+  margin-top: 10px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 2px;
+
+  &:disabled {
+    background-color: $color-grey-xlight;
+    cursor:not-allowed;
+    color: $color-white;
+  }
+}
+
+.login-button {
+  box-shadow: 3px 3px 5px $color-shadow;
+
+  .fa {
+    margin-left: 10px
+  }
+
+  &.facebook-button {
+    background-color: $color-facebook;
+  }
+
+  &.github-button {
+    background-color: $color-github;
+
+  }
+
+  &.google-button {
+    background-color: $color-grey-xlight;
+    color: $color-text;
+
+    .fa {
+      color: $color-google;
+    }
+  }
+}
+
+
+
+
+
+

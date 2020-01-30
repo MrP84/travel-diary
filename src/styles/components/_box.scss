@@ -1,0 +1,10 @@
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Roboto', sans-serif;
+  color: $color-text;
+
+  & > * {
+  flex: 1 1 100vw;
+  }
+}
