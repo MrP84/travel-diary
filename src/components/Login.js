@@ -1,4 +1,5 @@
 import React from 'react';
+import propTypes from 'prop-types'
 
 const Login = ({ googleAuthenticate, facebookAuthenticate }) => {
   return (
@@ -8,6 +9,11 @@ const Login = ({ googleAuthenticate, facebookAuthenticate }) => {
       <button onClick={facebookAuthenticate} className="facebook-button">Je me connecte avec Facebook</button>
     </div>
   )
+}
+
+Login.propTypes = {
+  googleAuthenticate: propTypes.func.isRequired,
+  facebookAuthenticate: propTypes.func.isRequired
 }
 
 export default Login

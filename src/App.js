@@ -9,10 +9,13 @@ import places from "./places";
 import base from './base';
 
 class App extends Component {
-  state = {
-    pseudo: this.props.match.params.pseudo,
-    places: {}
-  };
+  constructor(props) {
+    super(props)
+    this.state = {
+      pseudo: this.props.match.params.pseudo,
+      places: {}
+    }
+  }
 
   // sync with database
   componentDidMount() {

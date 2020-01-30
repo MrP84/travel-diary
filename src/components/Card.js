@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import propTypes from 'prop-types'
 
 const Card = ({ details }) => {
   const requireImg = path => {
@@ -24,5 +25,9 @@ const Card = ({ details }) => {
     </div>
   )
 }
+
+Card.propTypes = {
+  details: propTypes.object.isRequired
+};
 
 export default Card

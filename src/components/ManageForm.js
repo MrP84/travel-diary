@@ -1,4 +1,5 @@
 import React from 'react';
+import propTypes from 'prop-types'
 
 const ManageForm = ({ id: key, updateTrip, places, deleteTrip }) => {
   const place = places[key];
@@ -21,6 +22,13 @@ const ManageForm = ({ id: key, updateTrip, places, deleteTrip }) => {
       <button className="delete-button" onClick={() => deleteTrip(key)}>x Supprimer une étape</button>
     </div>
   )
+}
+
+ManageForm.propTypes = {
+  id: propTypes.string.isRequired,
+  updateTrip: propTypes.func.isRequired,
+  places: propTypes.object.isRequired,
+  deleteTrip: propTypes.func.isRequired
 }
 
 export default ManageForm
