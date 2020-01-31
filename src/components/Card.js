@@ -17,6 +17,7 @@ const Card = ({ details }) => {
       .reverse()
       .join('/');
   };
+
   return (
     <div className='card'>
       <div className="image">
