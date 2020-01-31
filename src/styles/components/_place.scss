@@ -2,7 +2,8 @@
   padding: 0 20px;
   margin: 20px 0 0;
 
-  .location {
+  &-location {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -14,6 +15,23 @@
 
     h3 {
       color: $color-blue-water;
+      text-transform: capitalize;
+    }
+  }
+
+  &-description {
+    position: relative;
+  }
+
+  &-date {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0 20px 0;
+    font-weight: bold;
+
+    span {
+      font-weight: normal;
     }
   }
 }

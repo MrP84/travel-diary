@@ -6,10 +6,11 @@
 
 .card {
   flex: 0 1 500px;
-  min-height: 400px;
+  min-height: 500px;
   margin: 20px 15px;
   box-shadow: 0px 3px 5px $color-shadow;
   border-radius: 2px;
+  position: relative;
 
   button {
     width: 100%;

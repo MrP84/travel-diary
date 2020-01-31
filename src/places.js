@@ -4,7 +4,9 @@ const places = {
     nom: 'Bali',
     image: 'bali.jpg',
     pays: 'Indonésie',
-    description: "Bali est une île d'Indonésie située entre les îles de Java et de Lombok. Elle fait partie des petites îles de la Sonde. Administrativement, l'île fait partie de la province du même nom et accueille sa capitale (ibu kota), Denpasar, dans le sud de l'île."
+    description: "Bali est une île d'Indonésie située entre les îles de Java et de Lombok. Elle fait partie des petites îles de la Sonde. Administrativement, l'île fait partie de la province du même nom et accueille sa capitale (ibu kota), Denpasar, dans le sud de l'île.",
+    date_debut: "22/04/2019",
+    date_fin: "03/05/2019"
   },
   place2: {
     nom: 'Koh Samui',
